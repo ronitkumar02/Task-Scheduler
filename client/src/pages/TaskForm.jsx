@@ -63,7 +63,7 @@ const TaskForm = () => {
     }
 
     return (
-        <div className='flex justify-center min-h-screen bg-gray-200'>
+        <div className='flex justify-center min-h-screen bg-gray-200 p-5'>
             <div className='w-full max-w-lg px-10 py-8 mx-auto bg-white rounded-lg shadow-xl h-3/4 mt-20'>
                 <div className='max-w-md mx-auto space-y-6'>
                     <form onSubmit={onSubmit}>

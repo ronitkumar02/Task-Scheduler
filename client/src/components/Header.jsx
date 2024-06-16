@@ -14,32 +14,32 @@ const Header = () => {
     }
 
     return (
-        <nav className="bg-sky-700 p-6">
+        <nav className="bg-sky-700 p-4">
             <div className="container mx-auto flex items-center justify-between flex-wrap ">
                 <Link to='/tasks'>
-                    <h2 className="text-white font-bold text-xl mx-4">Task Scheduler</h2>
+                    <h2 className="text-white font-bold text-base mx-4">Task Scheduler</h2>
                 </Link>
                 <div className='flex space-x-8'>
                     {user ? (
                         <div className='mx-4 flex'>
-                            <button className='text-white text-lg font-bold mr-3'>Welcome, {user.name} |</button>
-                            <Link to='/my-tasks' className='text-white font-semibold text-lg flex items-center mx-6 hover:opacity-80'>
+                            <button className='text-white text-base font-bold mr-3'>Welcome, {user.name} |</button>
+                            <Link to='/my-tasks' className='text-white font-semibold text-base flex items-center mx-6 hover:opacity-80'>
                                 <FaTasks className='mr-2' /> My Tasks
                             </Link>
-                            <Link to='/tasks' className='text-white font-semibold text-lg flex items-center mr-6 hover:opacity-80'>
+                            <Link to='/tasks' className='text-white font-semibold text-base flex items-center mr-6 hover:opacity-80'>
                                 <IoIosCreate className='mr-2' /> Create Task
                             </Link>
-                            <button onClick={onLogout} className='text-white font-semibold text-lg flex items-center hover:opacity-80'>
+                            <button onClick={onLogout} className='text-white font-semibold text-base flex items-center hover:opacity-80'>
                                 <FaSignOutAlt className='mr-2' /> Logout
                             </button>
                         </div>
                     )
                         : (
                             <div className='flex space-x-8 mx-4'>
-                                <Link to='/login' className='text-white font-semibold text-lg flex items-center'>
+                                <Link to='/login' className='text-white font-semibold text-base flex items-center'>
                                     <FaSignInAlt className='mr-2' /> Login
                                 </Link>
-                                <Link to='/' className='text-white font-semibold text-lg flex items-center'>
+                                <Link to='/' className='text-white font-semibold text-base flex items-center'>
                                     <FaUser className='mr-2' /> Register
                                 </Link>
                             </div>
